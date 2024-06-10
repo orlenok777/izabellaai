@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <h1>Webcam Capture App</h1>
       </header>
-      <WebcamCapture setAnswer={setAnswer} />
+      <WebcamCapture />
     </div>
   );
 }
