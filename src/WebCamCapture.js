@@ -17,6 +17,7 @@ const WebcamCapture = () => {
               "Content-Type": "application/json",
               Authorization: `Bearer ya29.a0AXooCguufb4wsGykF3dSB2H1Xxi4Y_zVd2dJIcTfolUzCTDbcWhsPCOtpnA63jxoTXZhUu366GtSdTWYL3jrJi89ylheTKtnQizg00_nNdie95pI8PeoS6v393Od7EY9_kMjkw1qjYeN6yrKD8pXoF_kOuJJsJNLE4kNWIvf3AaCgYKAXwSARMSFQHGX2MiPGY_9Piww2jEtyBirzmQdw0177`,
             },
+
             body: JSON.stringify({
               instances: [
                 {
@@ -36,6 +37,7 @@ const WebcamCapture = () => {
         );
 
         if (!response.ok) {
+          console.log(response);
           throw new Error("Network response was not ok");
         }
         const answer = await response.json();
