@@ -15,7 +15,7 @@ const WebcamCapture = () => {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              Authorization: `Bearer ya29.a0AXooCgu9a56fwD1EgFV8F-xfRmTc246oLehaWthE7dClpqMlu0T8y3Qe-ePW6U4W9_y9lrbNbCaHYl8P8fkxm9I_TpESpIPyTQt6_nenpRnb8vWrcbeUkWYBqONcPky5oSrhOkTTS3ElPCCz30u1utlrJOEWJ0mzDpQ_biy8krYaCgYKAZkSARMSFQHGX2MikN7ksJukNtD8gDpWOEY1qw0178`,
+              Authorization: `Bearer ya29.a0AXooCgsKE0x6s3pWgBErbBU7ZTalRgl4DoQUaH38FIa1Qva4PNpoUhfb7HWF8v4dnSURfx1FOrSwmxyFo1-zi0HBdoIB9hIXDRCZYejNM0kJIX5xYkoUcNmylspdMuDuzZ5pvTxTHuRr9hkBZqAnoRwR3W1_RgTWYDzFu0ouM1oaCgYKAfcSARMSFQHGX2MiwhsC8kPSf47WmaSBTiIWXA0178`,
             },
 
             body: JSON.stringify({
