@@ -25,9 +25,35 @@ const waterthanksarray2 = [
   "I appreciate you for drinking water and staying refreshed!",
   "Thank you for making the healthy choice to drink water!",
 ];
+
+const ruAskPhrases = [
+  "Не хочешь выпить стакан воды?",
+  "Тебе не нужна вода? Могу налить.",
+  "Может, выпьешь немного воды?",
+  "Хочешь стакан воды?",
+  "Не хочешь освежиться водой?",
+  "Как насчёт воды? Я могу принести.",
+  "Тебе нужно что-нибудь попить? Воды, например?",
+  "Ты не хочешь воды? Здесь есть свежая.",
+  "Выпей немного воды, если хочешь.",
+  "Тебе не нужна вода? Могу налить холодной.",
+];
+const thank_Ruyou_phrases = [
+  "Спасибо, что выпили воды!",
+  "Благодарю, что согласились выпить воду.",
+  "Спасибо, что утолили жажду.",
+  "Мы рады, что вы выпили воды.",
+  "Спасибо, что позаботились о себе и выпили воду.",
+  "Благодарим за то, что выпили воды.",
+  "Спасибо, что приняли наше предложение и выпили воду.",
+  "Мы очень благодарны, что вы выпили воды.",
+  "Спасибо, что поддержали наш совет и выпили воду.",
+  "Благодарим, что утолили жажду с помощью воды.",
+];
 const WebcamCapture = () => {
   const webcamRef = useRef(null);
   const [answer, setAnswer] = useState("no");
+  const [language, setLanguage] = useState("en-EN");
   const [audioSrc, setAudioSrc] = useState(null);
   let counterNo = 0;
   const capture = useCallback(async () => {
@@ -40,7 +66,7 @@ const WebcamCapture = () => {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              Authorization: `Bearer ya29.a0AXooCgv3T-2OHrC_rih2QQufVhmbEBgToj5LujgcZ444wQDrGxn0WIIqKXUNAb4KIoBsoUnEe0ntaUb-b2_xLsRP2ImuMQlEf-7YewDSbIHvF03k84Gty9pZBEjRBSIY42PfqA1gb-i_bjWLSUG3ZPvYn_SqxjW0XXEFstN7C1MaCgYKAVQSARMSFQHGX2MiHmzJbPQSH8bUmSxoNBBBnQ0178`,
+              Authorization: `Bearer ya29.a0AXooCguFYedPS453GDltwEMKVBYTxODI0sjGIcnSiRrRTMStpu6yitVtX2Ev6vsJf9pCdWqCTJ3PiwMn6JNHCsvMpILJsv1g_MVMdvrG-s_CvuL1fNlUqKuX1mnin3VSA-bty85KvqW4OjAvuWwodEEUdk8J62DCzRhnN9cgJncaCgYKAWgSARMSFQHGX2MiDHpbc7noBe7nQdRIFPBdZg0178`,
             },
 
             body: JSON.stringify({
@@ -55,7 +81,7 @@ const WebcamCapture = () => {
               ],
               parameters: {
                 sampleCount: 1,
-                language: "en",
+                language: language,
               },
             }),
           }
@@ -75,11 +101,15 @@ const WebcamCapture = () => {
 
           const payload = {
             input: {
-              text: wateraskarray[randomIndex],
+              text:
+                language === "en-EN"
+                  ? wateraskarray[randomIndex]
+                  : ruAskPhrases[randomIndex],
             },
             voice: {
-              languageCode: "en-gb",
-              name: "en-GB-Standard-A",
+              languageCode: language,
+              name:
+                language === "en-EN" ? "en-GB-Wavenet-D" : "ru-RU-Wavenet-D",
               ssmlGender: "FEMALE",
             },
             audioConfig: {
@@ -93,7 +123,7 @@ const WebcamCapture = () => {
               method: "POST",
               headers: {
                 Authorization:
-                  "Bearer ya29.a0AXooCgv3T-2OHrC_rih2QQufVhmbEBgToj5LujgcZ444wQDrGxn0WIIqKXUNAb4KIoBsoUnEe0ntaUb-b2_xLsRP2ImuMQlEf-7YewDSbIHvF03k84Gty9pZBEjRBSIY42PfqA1gb-i_bjWLSUG3ZPvYn_SqxjW0XXEFstN7C1MaCgYKAVQSARMSFQHGX2MiHmzJbPQSH8bUmSxoNBBBnQ0178",
+                  "Bearer ya29.a0AXooCguFYedPS453GDltwEMKVBYTxODI0sjGIcnSiRrRTMStpu6yitVtX2Ev6vsJf9pCdWqCTJ3PiwMn6JNHCsvMpILJsv1g_MVMdvrG-s_CvuL1fNlUqKuX1mnin3VSA-bty85KvqW4OjAvuWwodEEUdk8J62DCzRhnN9cgJncaCgYKAWgSARMSFQHGX2MiDHpbc7noBe7nQdRIFPBdZg0178",
                 "x-goog-user-project": "streamingai-33a74",
                 "Content-Type": "application/json; charset=utf-8",
               },
@@ -124,12 +154,17 @@ const WebcamCapture = () => {
           const randomIndex = Math.floor(Math.random() * wateraskarray.length);
           const payload1 = {
             input: {
-              text: waterthanksarray2[randomIndex],
+              text:
+                language === "en-EN"
+                  ? waterthanksarray2[randomIndex]
+                  : thank_Ruyou_phrases[randomIndex],
             },
             voice: {
-              languageCode: "en-gb",
-              name: "en-GB-Standard-A",
+              languageCode: language,
+
               ssmlGender: "FEMALE",
+              name:
+                language === "en-EN" ? "en-GB-Wavenet-D" : "ru-RU-Wavenet-D",
             },
             audioConfig: {
               audioEncoding: "MP3",
@@ -141,7 +176,7 @@ const WebcamCapture = () => {
               method: "POST",
               headers: {
                 Authorization:
-                  "Bearer ya29.a0AXooCgv3T-2OHrC_rih2QQufVhmbEBgToj5LujgcZ444wQDrGxn0WIIqKXUNAb4KIoBsoUnEe0ntaUb-b2_xLsRP2ImuMQlEf-7YewDSbIHvF03k84Gty9pZBEjRBSIY42PfqA1gb-i_bjWLSUG3ZPvYn_SqxjW0XXEFstN7C1MaCgYKAVQSARMSFQHGX2MiHmzJbPQSH8bUmSxoNBBBnQ0178",
+                  "Bearer ya29.a0AXooCguFYedPS453GDltwEMKVBYTxODI0sjGIcnSiRrRTMStpu6yitVtX2Ev6vsJf9pCdWqCTJ3PiwMn6JNHCsvMpILJsv1g_MVMdvrG-s_CvuL1fNlUqKuX1mnin3VSA-bty85KvqW4OjAvuWwodEEUdk8J62DCzRhnN9cgJncaCgYKAWgSARMSFQHGX2MiDHpbc7noBe7nQdRIFPBdZg0178",
                 "x-goog-user-project": "streamingai-33a74",
                 "Content-Type": "application/json; charset=utf-8",
               },
@@ -170,12 +205,12 @@ const WebcamCapture = () => {
         console.error("There was a problem with the fetch operation:", error);
       }
     }
-  }, [webcamRef, setAnswer]);
+  }, [webcamRef, setAnswer, language]);
 
   useEffect(() => {
     const interval = setInterval(capture, 5000);
     return () => clearInterval(interval);
-  }, [capture]);
+  }, [capture, language]);
 
   return (
     <div>
@@ -188,6 +223,19 @@ const WebcamCapture = () => {
       />
       <text>{answer}</text>
       {audioSrc && <audio autoPlay src={audioSrc}></audio>}
+      <text
+        onClick={() => {
+          setLanguage((prev) => {
+            if (prev === "en-EN") {
+              return "ru-RU";
+            } else {
+              return "en-EN";
+            }
+          });
+        }}
+      >
+        {language}
+      </text>
     </div>
   );
 };
