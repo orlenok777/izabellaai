@@ -66,7 +66,7 @@ const WebcamCapture = () => {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              Authorization: `Bearer ya29.a0AXooCguFYedPS453GDltwEMKVBYTxODI0sjGIcnSiRrRTMStpu6yitVtX2Ev6vsJf9pCdWqCTJ3PiwMn6JNHCsvMpILJsv1g_MVMdvrG-s_CvuL1fNlUqKuX1mnin3VSA-bty85KvqW4OjAvuWwodEEUdk8J62DCzRhnN9cgJncaCgYKAWgSARMSFQHGX2MiDHpbc7noBe7nQdRIFPBdZg0178`,
+              Authorization: `Bearer ya29.c.c0AY_VpZiIn0fbE1bo0a6ghNAdKCGu538f6TUL_e80ZPlB0k1USZxDleic2xwRiDpCDPlDFi06lARilErH6J6W8ulit5MJEPF0gCEt0esTaqGJ3MWbrhDTJAv3i6U_Jzy5waEw4wGOdWza2T4yByO-pG9mP6EBHBHIruSLwazzgZANlcwi6vemSY94kO3lBCQDov4vbgMmoa2ffM2CmSzpfsg6vvY5d4uoTpkh6GaqCa1aIWRqdVP92bfPR6fOEOqa4YFGmYAbmt8D87XFpOJe7ifpJ4wLpDCQzOlWi58IwKj7YWjLLl7IQOko5S_rRZPiWcPKxo7JK3jpVKV9IP6TEybo5rY0TqVItRxnwrY17rJO4mA1m2twHVk0wZacqi_0fFXRQ8cH400DMnWIrdB0ijIWaYjBd4nvd1fulytpp8r7I2io4h69pw-WhlX4S4M6gBum4ZeVlFcieiM89vQIUxYajUbj0Q_d16nnVlqjZuvZS-IoFyQOmIeBu3uYt3mIgl9gojqFvIapxOIi7oUzwyyvQB_OXj4wzgfsUdIyRcMplzQMSmpdJcr8UutWXg4vn2JUkrk7dpQYfwOjltFR9-7fse9UI1s349q9j8aMOijcFoFk_i9p4sj-SUQ4uZu-qjhQWM7O4pBr8hxiZpjmZ91Rxlv3Yo6x7Xoj6WiZV7cxof_b6WekuvYqil7Q7gflS9zFS9h3jaZuXlJ1t7nJwY9x_vgiahBXj16MI6hUq3nJz24Uy97edvB-VzqmY5tdiX0X8qwyn32gkpY96chq7I7Q37_8yVQcFsjpOgehtf9z9Vm9y1f2bfegjsJ3VR9Ih-WbUp1Wl-5otSgB65mcJOBarBQ3fiJxWjRafOz5Z5VXi29d3966VYOs1M8_WmowWgclOmR825rMdwxBotfvxO-w7FVVXh6XBXcg5tfMRRhyj0_z51gngJpxoMtQorgQ6FeF063Wa-35vOWl7d2Rk1nQI-0txIafvVaqmoBd3an7hjdjUs3bJF6`,
             },
 
             body: JSON.stringify({
@@ -123,7 +123,7 @@ const WebcamCapture = () => {
               method: "POST",
               headers: {
                 Authorization:
-                  "Bearer ya29.a0AXooCguFYedPS453GDltwEMKVBYTxODI0sjGIcnSiRrRTMStpu6yitVtX2Ev6vsJf9pCdWqCTJ3PiwMn6JNHCsvMpILJsv1g_MVMdvrG-s_CvuL1fNlUqKuX1mnin3VSA-bty85KvqW4OjAvuWwodEEUdk8J62DCzRhnN9cgJncaCgYKAWgSARMSFQHGX2MiDHpbc7noBe7nQdRIFPBdZg0178",
+                  "Bearer ya29.c.c0AY_VpZiIn0fbE1bo0a6ghNAdKCGu538f6TUL_e80ZPlB0k1USZxDleic2xwRiDpCDPlDFi06lARilErH6J6W8ulit5MJEPF0gCEt0esTaqGJ3MWbrhDTJAv3i6U_Jzy5waEw4wGOdWza2T4yByO-pG9mP6EBHBHIruSLwazzgZANlcwi6vemSY94kO3lBCQDov4vbgMmoa2ffM2CmSzpfsg6vvY5d4uoTpkh6GaqCa1aIWRqdVP92bfPR6fOEOqa4YFGmYAbmt8D87XFpOJe7ifpJ4wLpDCQzOlWi58IwKj7YWjLLl7IQOko5S_rRZPiWcPKxo7JK3jpVKV9IP6TEybo5rY0TqVItRxnwrY17rJO4mA1m2twHVk0wZacqi_0fFXRQ8cH400DMnWIrdB0ijIWaYjBd4nvd1fulytpp8r7I2io4h69pw-WhlX4S4M6gBum4ZeVlFcieiM89vQIUxYajUbj0Q_d16nnVlqjZuvZS-IoFyQOmIeBu3uYt3mIgl9gojqFvIapxOIi7oUzwyyvQB_OXj4wzgfsUdIyRcMplzQMSmpdJcr8UutWXg4vn2JUkrk7dpQYfwOjltFR9-7fse9UI1s349q9j8aMOijcFoFk_i9p4sj-SUQ4uZu-qjhQWM7O4pBr8hxiZpjmZ91Rxlv3Yo6x7Xoj6WiZV7cxof_b6WekuvYqil7Q7gflS9zFS9h3jaZuXlJ1t7nJwY9x_vgiahBXj16MI6hUq3nJz24Uy97edvB-VzqmY5tdiX0X8qwyn32gkpY96chq7I7Q37_8yVQcFsjpOgehtf9z9Vm9y1f2bfegjsJ3VR9Ih-WbUp1Wl-5otSgB65mcJOBarBQ3fiJxWjRafOz5Z5VXi29d3966VYOs1M8_WmowWgclOmR825rMdwxBotfvxO-w7FVVXh6XBXcg5tfMRRhyj0_z51gngJpxoMtQorgQ6FeF063Wa-35vOWl7d2Rk1nQI-0txIafvVaqmoBd3an7hjdjUs3bJF6",
                 "x-goog-user-project": "streamingai-33a74",
                 "Content-Type": "application/json; charset=utf-8",
               },
@@ -176,7 +176,7 @@ const WebcamCapture = () => {
               method: "POST",
               headers: {
                 Authorization:
-                  "Bearer ya29.a0AXooCguFYedPS453GDltwEMKVBYTxODI0sjGIcnSiRrRTMStpu6yitVtX2Ev6vsJf9pCdWqCTJ3PiwMn6JNHCsvMpILJsv1g_MVMdvrG-s_CvuL1fNlUqKuX1mnin3VSA-bty85KvqW4OjAvuWwodEEUdk8J62DCzRhnN9cgJncaCgYKAWgSARMSFQHGX2MiDHpbc7noBe7nQdRIFPBdZg0178",
+                  "Bearer ya29.c.c0AY_VpZiIn0fbE1bo0a6ghNAdKCGu538f6TUL_e80ZPlB0k1USZxDleic2xwRiDpCDPlDFi06lARilErH6J6W8ulit5MJEPF0gCEt0esTaqGJ3MWbrhDTJAv3i6U_Jzy5waEw4wGOdWza2T4yByO-pG9mP6EBHBHIruSLwazzgZANlcwi6vemSY94kO3lBCQDov4vbgMmoa2ffM2CmSzpfsg6vvY5d4uoTpkh6GaqCa1aIWRqdVP92bfPR6fOEOqa4YFGmYAbmt8D87XFpOJe7ifpJ4wLpDCQzOlWi58IwKj7YWjLLl7IQOko5S_rRZPiWcPKxo7JK3jpVKV9IP6TEybo5rY0TqVItRxnwrY17rJO4mA1m2twHVk0wZacqi_0fFXRQ8cH400DMnWIrdB0ijIWaYjBd4nvd1fulytpp8r7I2io4h69pw-WhlX4S4M6gBum4ZeVlFcieiM89vQIUxYajUbj0Q_d16nnVlqjZuvZS-IoFyQOmIeBu3uYt3mIgl9gojqFvIapxOIi7oUzwyyvQB_OXj4wzgfsUdIyRcMplzQMSmpdJcr8UutWXg4vn2JUkrk7dpQYfwOjltFR9-7fse9UI1s349q9j8aMOijcFoFk_i9p4sj-SUQ4uZu-qjhQWM7O4pBr8hxiZpjmZ91Rxlv3Yo6x7Xoj6WiZV7cxof_b6WekuvYqil7Q7gflS9zFS9h3jaZuXlJ1t7nJwY9x_vgiahBXj16MI6hUq3nJz24Uy97edvB-VzqmY5tdiX0X8qwyn32gkpY96chq7I7Q37_8yVQcFsjpOgehtf9z9Vm9y1f2bfegjsJ3VR9Ih-WbUp1Wl-5otSgB65mcJOBarBQ3fiJxWjRafOz5Z5VXi29d3966VYOs1M8_WmowWgclOmR825rMdwxBotfvxO-w7FVVXh6XBXcg5tfMRRhyj0_z51gngJpxoMtQorgQ6FeF063Wa-35vOWl7d2Rk1nQI-0txIafvVaqmoBd3an7hjdjUs3bJF6",
                 "x-goog-user-project": "streamingai-33a74",
                 "Content-Type": "application/json; charset=utf-8",
               },
@@ -189,6 +189,7 @@ const WebcamCapture = () => {
             throw new Error("Network response was not ok");
           }
           const answer2 = await result2.json();
+
           const audioContent = answer2.audioContent;
 
           // Convert base64 audio content to a blob URL
